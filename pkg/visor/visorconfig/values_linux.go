@@ -49,15 +49,15 @@ type Survey struct {
 func SystemSurvey() (Survey, error) {
 	var si sysinfo.SysInfo
 	si.GetSysInfo()
-	disks, err := ghw.Block(ghw.WithDisableWarnings())
+	disks, err := ghw.Block()
 	if err != nil {
 		return Survey{}, err
 	}
-	product, err := ghw.Product(ghw.WithDisableWarnings())
+	product, err := ghw.Product()
 	if err != nil {
 		return Survey{}, err
 	}
-	memory, err := ghw.Memory(ghw.WithDisableWarnings())
+	memory, err := ghw.Memory()
 	if err != nil {
 		return Survey{}, err
 	}
