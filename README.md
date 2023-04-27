@@ -117,7 +117,7 @@ Such a setup is optional, but it is documented below, and other examples will re
 
 ```
 mkdir -p "${HOME}/go/src/github.com/skycoin/" "${HOME}"/go/bin "${HOME}"/go/apps || true
-cd "${HOME}/go/src/src/github.com/skycoin/"
+cd "${HOME}/go/src/github.com/skycoin/"
 git clone https://github.com/skycoin/skywire
 #optionally checkout any branch
 git checkout develop
